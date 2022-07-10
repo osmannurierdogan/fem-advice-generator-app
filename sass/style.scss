@@ -1,0 +1,104 @@
+
+$mobile-breakpoint: 23.5em;
+$desktop-breakpoint: 90em;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+$color-primary-light-cyan: hsl(193, 38%, 86%);
+$color-primary-neon-green: hsl(150, 100%, 66%);
+
+$color-neutral-grayish-blue: hsl(217, 19%, 38%);
+$color-neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+$color-neutral-dark-blue: hsl(218, 23%, 16%);
+
+$font-size-quote: 2.8rem;
+$font-weight-bold: 800;
+$primary-font-family: "Manrope", sans-serif;
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 62.5%;
+	@media only screen and (max-width: $mobile-breakpoint) {
+		font-size: 50%;
+	}
+}
+body{
+	background-color: $color-neutral-dark-blue;
+	font-family: $primary-font-family;
+	height: 100vh;
+	//overflow-x: hidden;
+	position: absolute;
+	width: 100vw;
+}
+
+.container{
+	border-radius: 1.2rem;
+	background-color: $color-neutral-dark-grayish-blue;
+	left: 50%;
+	min-width: $mobile-breakpoint;
+	position: relative;
+	top: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	width: 27%;
+	@media only screen and (max-width: $mobile-breakpoint) {
+		width: 90%;
+	}
+}
+.advice{
+	box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
+	padding: 3.6rem 3.6rem 0;
+	&__id{
+		color: $color-primary-neon-green;
+		font-size: 1.8rem;		
+		font-weight: $font-weight-bold;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	&__text{
+		color: $color-primary-light-cyan;
+		font-size: $font-size-quote;
+		margin-top: 3.2rem;
+	}
+	&__divider{
+		margin: 3.2rem auto 0;
+		& img{
+			width: 100%;
+		}
+	}
+	&__generator{
+		align-items: center;
+		background: none;
+		background-color: $color-primary-neon-green;
+		border: none;
+		border-radius: 50%;
+		bottom: -3.5rem;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		margin-inline: auto;
+		position: relative;
+		transition: all .5s;
+		&:hover{
+			transform: rotate(360deg);
+		}
+		& img{
+			padding: 2.4rem;
+		}
+	}
+}
+
+.attribution {
+	bottom: 0;
+	font-size: 1.1rem;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	transform: translateX(-50%);
+	& a {
+		color: hsl(228, 45%, 44%);
+	}
+}

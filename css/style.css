@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 23.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: #1f2632;
+  font-family: "Manrope", sans-serif;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+
+.container {
+  border-radius: 1.2rem;
+  background-color: #323a49;
+  left: 50%;
+  min-width: 23.5em;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 27%;
+}
+
+@media only screen and (max-width: 23.5em) {
+  .container {
+    width: 90%;
+  }
+}
+
+.advice {
+  -webkit-box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 3.6rem 3.6rem 0;
+}
+
+.advice__id {
+  color: #52ffa8;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.advice__text {
+  color: #cee3e9;
+  font-size: 2.8rem;
+  margin-top: 3.2rem;
+}
+
+.advice__divider {
+  margin: 3.2rem auto 0;
+}
+
+.advice__divider img {
+  width: 100%;
+}
+
+.advice__generator {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  background-color: #52ffa8;
+  border: none;
+  border-radius: 50%;
+  bottom: -3.5rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-inline: auto;
+  position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.advice__generator:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.advice__generator img {
+  padding: 2.4rem;
+}
+
+.attribution {
+  bottom: 0;
+  font-size: 1.1rem;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.attribution a {
+  color: #3e52a3;
+}
